@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <script src="Script/datos.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario</h1>
+        <form class="formulario" action="" name="formulario">
+            <label for="dni">dni</label>
+            <input class="dni" id="dni" type="text" pattern="[0-9]{8}[A-Za-z]{1}" onchange="validarDni()" required>
+
+            <label for="nombre">Nombre</label>
+            <input class="nombre" type="text" pattern="[A-Za-z]*" required>
+
+            <label for="fecha">Fecha Nacimiento</label>
+            <input class="fecha" type="date" required>
+
+            <label for="hijos">Hijos</label>
+            <input class="hijos" type="number" min="0" max="10" required>
+
+            <label for="email">Email</label>
+            <input class="email" type="email" required>
+
+            <label for="pass">Contraseña</label>
+            <input class="pass" type="password" minlength="8" maxlength="10" required>
+            <button value="enviar">Enviar</button>
+        </form>
+        <h1 id="respuesta" ></h1>
+    </div>
+</body>
+</html>

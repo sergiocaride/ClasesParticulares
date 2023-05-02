@@ -1,0 +1,85 @@
+.principal{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    
+}
+.cuadrado{
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    margin: 2px;
+}
+
+.tablero{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 75px;
+    margin:auto;
+    justify-content: space-between;
+    float: left;
+}
+#cuerpo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    margin: auto;
+    margin-left: 130px;
+}
+
+.teclado .cuadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    margin: 2px;
+    cursor: pointer;
+}
+.tecla:hover{
+    background-color: red;
+}
+
+.tecla:active{
+    background-color: grey;
+}
+
+.teclaEnter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 30px;
+    width: 60px;
+    margin: 2px;
+    cursor: pointer;
+
+}
+
+.teclaEnter:hover{
+    background-color: red;
+}
+
+.teclaEnter:active{
+    background-color: grey;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
