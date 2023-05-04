@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="covid.css">
+    <title>Estadisiticas COVID</title>
+</head>
+<body>
+    <div>
+        <h1>Estadisticas del covid 19</h1>
+        <b>Fecha</b><input type="date" id="inputFecha"><br/>
+        <b>Pais</b><select id="selectPais">
+            <option value="ny">New York</option>
+            <option value="la">Los Angeles</option>
+        </select>
+            <br/>
+        <button id="btnCargar">Cargar estadisticas</button>
+            <br/>
+
+        <ul>
+            <li>Positivos:<span id="positivos"></span></li>
+            <li>Casos Probables:<span id="probables"></span></li>
+            <li>Negativos:<span id="negativos"></span></li>
+        </ul>
+    </div>
+    <script src="covid.js"></script>
+</body>
+</html>
